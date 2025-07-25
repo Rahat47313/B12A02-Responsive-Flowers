@@ -8,32 +8,39 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="inter">
-    <header>
+    <header class="md:w-[80%] md:mx-auto">
       <nav class="flex justify-between mx-4 mt-3">
         <div><img src="./assets/logo.png" alt="logo" class="w-16" /></div>
-        <div class="flex items-center gap-2">
-          <img src="./assets/shopping-cart.svg" alt="Cart icon" class="h-6" />
-          <p>Cart ($56)</p>
+        <div class="flex items-center gap-12">
+          <div class="hidden md:flex items-center gap-12">
+            <a href="./" class="font-bold text-[#252432]">Home</a>
+            <a href="./" class="text-[#8987A1]">Shop</a>
+            <a href="./" class="text-[#8987A1]">About Us</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/shopping-cart.svg" alt="Cart icon" class="h-6" />
+            <p>Cart ($56)</p>
+          </div>
         </div>
       </nav>
     </header>
-    <main class="flex flex-col gap-10">
-      <section id="banner" class="mb-5">
-        <div class="my-7">
+    <main class="flex flex-col gap-10 md:w-[80%] md:mx-auto">
+      <section id="banner" class="mb-5 flex flex-col md:flex-row md:items-end">
+        <div class="md:order-2 md:w-1/2 my-7 md:my-0 md:mt-26">
           <img
             src="./assets/hero-flower.png"
             alt="banner image"
             class="w-full h-auto"
           />
         </div>
-        <div class="mx-4">
+        <div class="md:order-1 md:w-1/2 mx-4 md:mx-0">
           <div class="mb-3">
             <p class="noto-serif">
               ALWAYS <span class="text-primary">FRESH</span>
             </p>
             <p class="noto-serif text-primary">FLOWERS</p>
           </div>
-          <p class="opacity-50">
+          <p class="opacity-50 md:text-[22px]">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
             variety of fresh flowers that are perfect for any occasion.
@@ -44,13 +51,13 @@
       <section id="our-plants" class="mx-4">
         <div class="text-center space-y-4">
           <p class="noto-serif"><span class="text-primary">Our</span> Plants</p>
-          <p class="opacity-50">
+          <p class="opacity-50 md:text-[22px]">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
             variety of fresh.
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-x-5 gap-y-7 mt-7">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-7 mt-7">
           <div class="flex flex-col items-center gap-7">
             <img
               src="./assets/sample-flower-image.png"
@@ -132,6 +139,38 @@
             </button>
           </div>
           <div class="flex flex-col items-center gap-7">
+            <img
+              src="./assets/sample-flower-image.png"
+              alt="card image"
+              class="w-full h-auto"
+            />
+            <div class="text-center">
+              <p class="font-medium text-[16px]">Lily Blossom</p>
+              <p class="font-bold text-[16px]">20 USD</p>
+            </div>
+            <button
+              class="bg-primary font-semibold text-white text-[16px] py-6 px-6 w-full"
+            >
+              ADD TO CART
+            </button>
+          </div>
+          <div class="hidden md:flex flex-col items-center gap-7">
+            <img
+              src="./assets/sample-flower-image.png"
+              alt="card image"
+              class="w-full h-auto"
+            />
+            <div class="text-center">
+              <p class="font-medium text-[16px]">Lily Blossom</p>
+              <p class="font-bold text-[16px]">20 USD</p>
+            </div>
+            <button
+              class="bg-primary font-semibold text-white text-[16px] py-6 px-6 w-full"
+            >
+              ADD TO CART
+            </button>
+          </div>
+          <div class="hidden md:flex flex-col items-center gap-7">
             <img
               src="./assets/sample-flower-image.png"
               alt="card image"
@@ -150,26 +189,34 @@
         </div>
       </section>
 
-      <section id="plants-lover" class="mx-4">
-        <img src="./assets/flower-store.png" alt="plants lover image" />
-        <p class="noto-serif mt-5 mb-4">Flower & Plants Lover</p>
-        <ul class="list-disc pl-4 ml-2 space-y-4">
-          <li class="opacity-50">
-            Indulge your senses with the beauty and fragrance of our fresh
-            flower shop. From classic roses to exotic blooms, we offer a wide
-            variety of fresh.
-          </li>
-          <li class="opacity-50">
-            Indulge your senses with the beauty and fragrance of our fresh
-            flower shop. From classic roses to exotic blooms, we offer a wide
-            variety of fresh.
-          </li>
-          <li class="opacity-50">
-            Indulge your senses with the beauty and fragrance of our fresh
-            flower shop. From classic roses to exotic blooms, we offer a wide
-            variety of fresh.
-          </li>
-        </ul>
+      <section id="plants-lover" class="flex flex-col md:flex-row mx-4">
+        <div class="w-full md:w-1/2">
+          <img
+            src="./assets/flower-store.png"
+            alt="plants lover image"
+            class="w-full h-auto"
+          />
+        </div>
+        <div class="md:w-1/2">
+          <p class="noto-serif mt-5 mb-4">Flower & Plants Lover</p>
+          <ul class="list-disc pl-4 ml-2 space-y-4">
+            <li class="opacity-50 md:text-[22px]">
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh.
+            </li>
+            <li class="opacity-50 md:text-[22px]">
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh.
+            </li>
+            <li class="opacity-50 md:text-[22px]">
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh.
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="mx-4">
@@ -177,7 +224,7 @@
           <p class="noto-serif">
             <span class="text-primary">Latest</span> Deals
           </p>
-          <p class="opacity-50">
+          <p class="opacity-50 md:text-[22px]">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
             variety of fresh.
@@ -251,7 +298,7 @@
       <div class="mx-4 mt-12">
         <div>
           <img src="./assets/logo.png" alt="Logo" class="mb-4" />
-          <p class="opacity-50">
+          <p class="opacity-50 md:text-[22px]">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop.
           </p>
