@@ -11,10 +11,6 @@
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-size: 27px;
-  @media screen and (min-width: 768px) {
-    font-size: 35px;
-  }
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
